@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Portfolio</title>
+    <link rel="stylesheet" href="assests/Css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>RAJ KUMAR SETH</h1>
+        <p>MANDALA ARTWORKS</p>
+    </header>
+
+    <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="gallery">
+        <h2>✨ Art Gallery</h2>
+
+        <div class="art-item">
+            <img src="img.jpg" alt="Description of Art Piece 1" style="width:500px;height:600px;"
+                onclick="openModal('art-piece-1.jpg', 'Art Piece 1: Title and Description')">
+            <h3>Lord Krishna</h3>
+            <p>Medium: Mandala Art | Year: 2025</p>
+        </div>
+
+        <div class="art-item">
+            <img src="img2.jpg" alt="Description of Art Piece 2" style="width:400px;height:600px;"
+                onclick="openModal('art-piece-2.jpg', 'Art Piece 2: Title and Description')">
+            <h3>Lord Ganesha</h3>
+            <p>Medium: Mandala Art | Year: 2025</p>
+        </div>
+
+        <div class="art-item">
+            <img src="img3.jpg" alt="Description of Art Piece 3" style="width:400px;height:600px;"
+                onclick="openModal('art-piece-3.jpg', 'Art Piece 3: Title and Description')">
+            <h3>Lord Shiva</h3>
+            <p>Medium: Mandala Art | Year: 2025</p>
+        </div>
+
+        <div class="art-item">
+            <img src="img4.jpg" alt="Description of Art Piece 4" style="width:500px;height:600px;"
+                onclick="openModal('art-piece-4.jpg', 'Art Piece 4: Title and Description')">
+            <h3>Radha Krishna</h3>
+            <p>Medium: Mandala Art | Year: 2025</p>
+        </div>
+
+        <div class="art-item">
+            <img src="img5.jpg" alt="Description of Art Piece 5" style="width:400px;height:600px;"
+                onclick="openModal('art-piece-5.jpg', 'Art Piece 5: Title and Description')">
+            <h3>Lord Shiva</h3>
+            <p>Medium: Mandala Art | Year: 2025</p>
+        </div>
+    </main>
+
+    <section id="about">
+        <h2>👤 About Me</h2>
+        <p>I am a passionate artist who specializes in creating detailed and meaningful Mandala art. For me, mandalas
+            are not just designs—they are a form of meditation, balance, and self-expression. Each piece I create is
+            crafted with patience, symmetry, and a deep connection to creativity.
+
+            My journey with Mandala art started with simple patterns, but over time I developed my own style, combining
+            traditional elements with modern creativity. I love exploring complex geometries, fine line-work, and
+            visually calming patterns that bring peace to both the creator and the viewer.
+
+            Art, for me, is a way to express who I am—and Mandala art is the language through which I share my inner
+            world.</p>
+    </section>
+
+    <section id="contact">
+        <h2>✉️ Get In Touch For Commision Orders </h2>
+        <p>Email: <a href="mailto:rajkumarseth62034@gmail.com">rajkumarseth62034@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/seth_artistry">@seth_artistry</a></p>
+
+    </section>
+
+    <div id="artModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
